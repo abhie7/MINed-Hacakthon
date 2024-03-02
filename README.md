@@ -79,5 +79,10 @@ query="What corpora are used for H-AES?"
 docs=docsearch.similarity_search(query)
 chain=load_qa_chain(llm, chain_type="stuff")
 chain.run(input_documents=docs, question=query)
-
 ```
+
+## Team Members
+
+- Abhiraj Chaudhuri ([@abhie7](https://github.com/abhie7))
+- Jugal Gajjar
+- Sanjana Nathani
