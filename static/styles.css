@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background-color: #111927;
+    background-image:
+        radial-gradient(at 47% 33%, hsl(187.64, 77%, 12%) 0, transparent 59%),
+        radial-gradient(at 82% 65%, hsl(218.00, 39%, 11%) 0, transparent 55%);
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #182439;
+}
+::-webkit-scrollbar-thumb {
+  background: #2d474882;
+  border-radius: 7px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2d474882;
+  border-radius: 7px;
+}
+
+h1 {
+  color: white;
+  margin: 10px 0 10px 0;
+}
+
+#chat-container {
+  width: 80%;
+  min-height: 65vh;
+  max-height: 65vh;
+  margin: auto;
+  padding: 10px;
+  overflow-y: auto;
+  backdrop-filter: blur(16px) saturate(115%);
+  -webkit-backdrop-filter: blur(16px) saturate(115%);
+  background-color: rgba(17, 25, 40, 0.34);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.card {
+  text-align:  left;
+  backdrop-filter: blur(16px) saturate(115%);
+  -webkit-backdrop-filter: blur(16px) saturate(115%);
+  background-color: rgba(17, 25, 40, 0.34);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  padding: 10px;
+  margin: 10px;
+}
+
+.query {
+  color: #fff;
+}
+
+.response {
+  color: #cfcfcf;
+}
+
+#file-container {
+  display: none;
+  color: #fff;
+  width: 80%;
+  padding: 10px;
+  margin: auto;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  backdrop-filter: blur(16px) saturate(115%);
+  -webkit-backdrop-filter: blur(16px) saturate(115%);
+  background-color: rgba(17, 25, 40, 0.34);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+#input-container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding: 0;
+}
+
+#user-input {
+  flex-grow: 1;
+  padding: 10px;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  background: rgba(17, 25, 39, 0.3);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+#user-input::placeholder {
+  color: #ffffff96;
+}
+
+#user-input:focus {
+  outline: none;
+}
+
+.btn {
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+#submit-button {
+  background-color: #45a080;
+  color: white;
+}
